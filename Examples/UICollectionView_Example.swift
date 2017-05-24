@@ -2,12 +2,15 @@
 
 class TestCollectionCell: UICollectionViewCell, ReusableView, NibLoadableView { }
 	
-override func viewDidLoad() {
-    ...
-    collectionView.register(TestCollectionCell.self)
-}
+class TestViewController: UIViewController, UICollectionViewDataSource {
 
-func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {        
-    let testCell: TestCollectionCell = collectionView.dequeueReusableCell(for: indexPath)
-    return testCell
+	override func viewDidLoad() {
+		...
+		collectionView.register(TestCollectionCell.self)
+	}
+
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {        
+		let testCell: TestCollectionCell = collectionView.dequeueReusableCell(for: indexPath)
+		return testCell
+	}
 }
