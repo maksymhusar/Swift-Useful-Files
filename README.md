@@ -2,6 +2,7 @@
 
 **Useful files for speeding up development, reusability and clean code!**
 
+Language: Swift 3.1
 
 Extensions:
   - Notification+Extension (add custom notification names)
@@ -27,6 +28,8 @@ Helpers:
   - Utils (cropping image and getting deviceScaleMultiplier for text size)
 
 
+# Author
 
+Husar Maksym, mkgusar@gmail.com
 
-Please Share Your Feedback And Suggestions. I Am Waiting To Hear From You.
+_Please Share Your Feedback And Suggestions. I Am Waiting To Hear From You._
