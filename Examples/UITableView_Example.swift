@@ -2,7 +2,7 @@
 
 class TestTableCell: UITableViewCell, ReusableView, NibLoadableView { }
 	
-class TestViewController: UIViewController {
+class TestViewController: UIViewController, UITableViewDataSource {
 
 	override func viewDidLoad() {
 	    ...
