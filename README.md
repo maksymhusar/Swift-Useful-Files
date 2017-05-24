@@ -2,7 +2,6 @@
 
 **Useful files for speeding up development, reusability and clean code!**
 
-List of files:
 
 Extensions:
   - Notification+Extension (add custom notification names)
