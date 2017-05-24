@@ -12,7 +12,7 @@ Extensions:
   - UIColor+Extension 
   - UILabel+Extension (set letterSpacing and  lineHeight)
   - UINavigationController+Extension (set custom transitionAnimation)
-  - UITableView+Extension (easy Cell Registration & Reusing)
+  - UITableView+Extension (easy Cell Registration & Reusing, centered loading spinner)
   - UIView+Extension (easy loading from Nib)
   
 Protocols:
