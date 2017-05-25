@@ -2,7 +2,9 @@
 
 **Useful files for speeding up development, reusability and clean code!**
 
-Requirements: Swift 3.1
+Requirements: 
+- Swift 3.1
+- Xcode 8.3.2
 
 Extensions:
   - Notification+Extension (add custom notification names)
