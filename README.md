@@ -16,6 +16,7 @@ Extensions:
   - UINavigationController+Extension (set custom transitionAnimation)
   - UITableView+Extension (easy Cell Registration & Reusing, centered loading spinner)
   - UIView+Extension (easy loading from Nib)
+  - UIImage+Extension (cropping image)
   
 Protocols:
   - NibLoadableView
@@ -27,7 +28,7 @@ Protocols:
 Helpers:
   - GlobalAppearance (configure appearance for the App)
   - Reachability (checking isInternetAvailable)
-  - Utils (cropping image and getting deviceScaleMultiplier for text size)
+  - Utils (getting deviceScaleMultiplier for text size)
 
 
 # Author
