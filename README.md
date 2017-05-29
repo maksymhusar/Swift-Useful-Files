@@ -6,7 +6,7 @@ Requirements:
 - Swift 3.1
 - Xcode 8.3.2
 
-Extensions:
+###Extensions
   - Notification+Extension (add custom notification names)
   - PKHUD+Extension (hide HUD after timeout)
   - UIApplication+Extension (get topViewController)
@@ -18,17 +18,25 @@ Extensions:
   - UIView+Extension (easy loading from Nib)
   - UIImage+Extension (cropping image)
   
-Protocols:
+###Protocols
   - NibLoadableView
   - ReusableView
   - Alertable (easy showing alert with message)
   - Backable
   - UnwrappableNetworkResponse
   
-Helpers:
+###Helpers
   - GlobalAppearance (configure appearance for the App)
   - Reachability (checking isInternetAvailable)
   - Utils (getting deviceScaleMultiplier for text size)
+
+###Scripts
+  - SwiftTODOScript (show "TODO:|FIXME:" as warnings) 
+
+Scripts Usage:
+1. Copy Scripts folder into your project's root directory
+2. Build Phases -> Click '+' -> New Run Script Phase
+3. Add script: /bin/sh ${SRCROOT}/Scripts/NEEDED_SCRIPT_NAME.swift
 
 
 # Author
