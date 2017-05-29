@@ -45,7 +45,8 @@ Scripts Usage:
   - Cocoa Pods
   To fix the slow "Copy pods resources" problem you can copy the resources only if they haven't been copied before.
   In the Podfile for your project add the following post install hook:
-  
+  
+```
 post_install do |installer|
     Dir.glob(installer.sandbox.target_support_files_root + "Pods-*/*.sh").each do |script|
         flag_name = File.basename(script, ".sh") + "-Installation-Flag"
@@ -56,8 +57,8 @@ post_install do |installer|
         File.write(script, content)
     end
 end
-
-  
+```
+  
   P.S. This solution required to Clean project аfter each Podfile change (because of caching)
 
 # Author
