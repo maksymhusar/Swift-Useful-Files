@@ -37,9 +37,9 @@ Scripts Usage:
 1. Copy Scripts folder into your project's root directory
 2. Build Phases -> Click '+' -> New Run Script Phase
 3. You should then see a new section added where you can inject your bash script:
-
-/bin/sh ${SRCROOT}/Scripts/SCRIPT_NAME.swift
-
+``` 
+/bin/sh ${SRCROOT}/Scripts/SCRIPT_NAME.swift 
+```
 ### Build time optimizations
   - Use plain “DWARF” instead of “DWARF with dSYM File” as your “Debug Information Format”.
   - Cocoa Pods
