@@ -31,12 +31,13 @@ Requirements:
   - Utils (getting deviceScaleMultiplier for text size)
 
 ### Scripts
-  - SwiftTODOScript (show "TODO:|FIXME:" as warnings) 
+  - swiftTODOScript (show "TODO:|FIXME:" as warnings) 
 
 Scripts Usage:
 1. Copy Scripts folder into your project's root directory
 2. Build Phases -> Click '+' -> New Run Script Phase
-3. Add script: /bin/sh ${SRCROOT}/Scripts/NEEDED_SCRIPT_NAME.swift
+3. You should then see a new section added where you can inject your bash script: 
+/bin/sh ${SRCROOT}/Scripts/SCRIPT_NAME.swift
 
 
 # Author
