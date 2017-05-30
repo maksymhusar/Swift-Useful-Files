@@ -61,6 +61,11 @@ end
   
   P.S. This solution required to Clean project аfter each Podfile change (because of caching)
 
+## Useful Articles
+
+  - Cool Debugging Feature (UIDebuggingInformationOverlay) 
+  http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
+
 # Author
 
 Husar Maksym, mkgusar@gmail.com
