@@ -66,3 +66,7 @@ end
 Husar Maksym, mkgusar@gmail.com
 
 _Please Share Your Feedback And Suggestions. I Am Waiting To Hear From You._
+
+# License
+
+Swift-Useful-Files is available under the MIT license. See the LICENSE file for more info.
