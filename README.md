@@ -4,7 +4,6 @@
 
 Requirements: 
 - Swift 3.1
-- Xcode 8.3.2
 
 ### Extensions
   - Notification+Extension (add custom notification names)
