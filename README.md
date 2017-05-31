@@ -31,6 +31,10 @@ Requirements:
   - Utils (getting deviceScaleMultiplier for text size)
 
 ### Scripts
+  - Command line script for showing number of lines in project:
+```
+find . -type f -exec wc -l {} + | sort -n
+```
   - swiftTODOScript (show "TODO:|FIXME:" as warnings) 
 
 Scripts Usage:
@@ -62,8 +66,7 @@ end
   P.S. This solution required to Clean project аfter each Podfile change (because of caching)
 
 ## Useful Articles
-
-  - Cool Debugging Feature (UIDebuggingInformationOverlay)
+  - Cool Debugging Feature (UIDebuggingInformationOverlay)
   
   http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
 
