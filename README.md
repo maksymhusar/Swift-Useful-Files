@@ -64,6 +64,10 @@ end
   
   P.S. This solution required to Clean project аfter each Podfile change (because of caching)
 
+  - Writing High-Performance Swift Code
+  
+  https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst
+  
 ## Articles
   - Cool Debugging Feature (UIDebuggingInformationOverlay)
   
