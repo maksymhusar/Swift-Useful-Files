@@ -69,9 +69,11 @@ end
   https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst
   
   - Generate file with sections of code that are complex for compilation
+  
   ```
   xcodebuild -workspace App.xcworkspace -scheme App clean build OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies" | grep .[0-9]ms | grep -v ^0.[0-9]ms | sort -nr > functions_build_analysis.txt
   ```
+  
   where «App.xcworkspace» — workspace name, «App» — scheme name.
   
 ## Articles
