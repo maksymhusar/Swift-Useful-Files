@@ -11,7 +11,7 @@ import UIKit
 extension UIView {
     
     @discardableResult
-    func fromNib<T : UIView>() -> T? {
+    func fromNib<T: UIView>() -> T? {
         guard let view = Bundle.main.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?[0] as? T else {
             // xib not loaded, or it's top view is of the wrong type
             return nil
