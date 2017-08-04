@@ -9,20 +9,17 @@
 import UIKit
 
 struct Utils {
-    static let isDefaultScaleEnabled = false // used for text size scaling
+    static let isTextSizeScaleEnabledDefaultValue = false // used for text size scaling
     
     static let deviceScaleMultiplier: CGFloat = {
         let height = UIScreen.main.bounds.size.height
         if height <= 568 { // iphone 5, 5s => 4 inch and less
             return 1.0
-        }
-        else if height <= 667 { // iphone 6, 6s => 4.7 inch
+        } else if height <= 667 { // iphone 6, 6s => 4.7 inch
             return 1.3
-        }
-        else if height <= 736 { // iphone 6s+ 6+ => 5.5 inch
+        } else if height <= 736 { // iphone 6s+ 6+ => 5.5 inch
             return 1.3
-        }
-        else {
+        } else {
             return 1.0
         }
     }()
