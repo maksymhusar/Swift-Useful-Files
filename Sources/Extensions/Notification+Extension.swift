@@ -13,6 +13,8 @@ extension Notification.Name {
 }
 
 // Used as a namespace for all `Notification` user info dictionary keys
-extension Notification.Key {
-    static let ErrorDescription = "com.notification.key.errorDescription"
+extension Notification {
+    struct Key {
+        static let ErrorDescription = "com.notification.key.errorDescription"
+    }
 }
