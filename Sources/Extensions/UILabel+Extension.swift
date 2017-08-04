@@ -10,7 +10,7 @@ import UIKit
 
 extension UILabel {
     
-    func setText(_ text: String, lineHeight: CGFloat, isScalable: Bool = Utils.isDefaultScaleEnabled) {
+    func setText(_ text: String, lineHeight: CGFloat, isScalable: Bool = Utils.isTextSizeScaleEnabledDefaultValue) {
         self.text = text
         let newLineHeight = isScalable ? lineHeight * Utils.deviceScaleMultiplier : lineHeight
         setLineHeight(newLineHeight)
@@ -24,13 +24,14 @@ extension UILabel {
     private func setLetterSpacing(_ letterSpacing: CGFloat) {
         if let attributedString = self.attributedText {
             let newAttributedString = NSMutableAttributedString(attributedString: attributedString)
-            newAttributedString.addAttribute(NSKernAttributeName, value: letterSpacing, range: NSMakeRange(0, attributedString.string.characters.count))
+            
+            newAttributedString.addAttribute(NSKernAttributeName, value: letterSpacing, range: NSRange(location: 0, length: attributedString.string.characters.count))
             self.attributedText = newAttributedString
             
-        }
-        else if let text = self.text {
+        } else if let text = self.text {
             let attributedString = NSMutableAttributedString(string: text)
-            attributedString.addAttribute(NSKernAttributeName, value: letterSpacing, range: NSMakeRange(0, text.characters.count))
+
+            attributedString.addAttribute(NSKernAttributeName, value: letterSpacing, range: NSRange(location: 0, length: text.characters.count))
             self.attributedText = attributedString
         }
     }
@@ -46,16 +47,15 @@ extension UILabel {
             let newAttributedString = NSMutableAttributedString(attributedString: attributedString)
             newAttributedString.addAttribute(NSParagraphStyleAttributeName,
                                              value: style,
-                                             range: NSMakeRange(0, attributedString.string.characters.count))
+                                             range: NSRange(location: 0, length: attributedString.string.characters.count))
             
             self.attributedText = newAttributedString
             
-        }
-        else if let text = self.text {
+        } else if let text = self.text {
             let attributeString = NSMutableAttributedString(string: text)
             attributeString.addAttribute(NSParagraphStyleAttributeName,
                                          value: style,
-                                         range: NSMakeRange(0, text.characters.count))
+                                         range: NSRange(location: 0, length: text.characters.count))
             
             self.attributedText = attributeString
         }
