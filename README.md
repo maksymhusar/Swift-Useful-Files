@@ -76,6 +76,10 @@ end
   
   where «App.xcworkspace» — workspace name, «App» — scheme name.
   
+  - Build Time Analyzer for Xcode
+  
+  https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
+  
 ## Articles
   - Cool Debugging Feature (UIDebuggingInformationOverlay)
   
