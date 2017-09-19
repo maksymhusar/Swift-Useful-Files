@@ -93,6 +93,11 @@ end
   
   https://www.swiftbysundell.com/posts/a-deep-dive-into-grand-central-dispatch-in-swift
 
+## Libraries
+
+  - SUPER USEFUL for managing keyboard 
+https://github.com/hackiftekhar/IQKeyboardManager
+
 # Author
 
 Husar Maksym, mkgusar@gmail.com
