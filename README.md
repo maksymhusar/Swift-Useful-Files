@@ -3,7 +3,7 @@
 **Useful files for speeding up development, reusability and clean code!**
 
 Requirements: 
-- Swift 3.1
+- Swift 3.2
 
 ### Extensions
   - Notification+Extension (add custom notification names)
@@ -79,12 +79,6 @@ end
   - Build Time Analyzer for Xcode
   
   https://github.com/RobertGummesson/BuildTimeAnalyzer-for-Xcode
-
-## Libraries
-
-  - SUPER USEFUL for managing keyboard 
-  
-  https://github.com/hackiftekhar/IQKeyboardManager
 
 # Author
 
