@@ -16,6 +16,7 @@ Requirements:
   - UITableView+Extension (easy Cell Registration & Reusing, centered loading spinner)
   - UIView+Extension (easy loading from Nib)
   - UIImage+Extension (cropping image)
+  - UIFont+Extension (easy to add and use custom fonts)
   
 ### Protocols
   - NibLoadableView
