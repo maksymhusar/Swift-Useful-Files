@@ -92,6 +92,10 @@ end
   - A deep dive into Grand Central Dispatch in Swift
   
   https://www.swiftbysundell.com/posts/a-deep-dive-into-grand-central-dispatch-in-swift
+  
+  - SOLID
+  
+  https://marcosantadev.com/solid-principles-applied-swift/
 
 ## Libraries
 
