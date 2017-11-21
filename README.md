@@ -3,7 +3,7 @@
 **Useful files for speeding up development, reusability and clean code!**
 
 Requirements: 
-- Swift 3.2
+- Swift 4
 
 ### Extensions
   - Notification+Extension (add custom notification names)
