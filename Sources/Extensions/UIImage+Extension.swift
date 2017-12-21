@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     func croppedImage(withMaxWidth width: CGFloat) -> UIImage {
-        var imageWidth  = self.size.width
+        var imageWidth = self.size.width
         var imageHeight = self.size.height
         
         guard imageWidth > width || imageHeight > width else {
@@ -20,11 +20,11 @@ extension UIImage {
         if imageWidth > imageHeight {
             let scale = width / imageWidth
             imageWidth = width
-            imageHeight = imageHeight * scale
+            imageHeight *= scale
         } else {
             let scale = width / imageHeight
             imageHeight = width
-            imageWidth = imageWidth * scale
+            imageWidth *= scale
         }
         
         UIGraphicsBeginImageContext(CGSize(width: imageWidth, height: imageHeight))
@@ -39,4 +39,3 @@ extension UIImage {
         return image
     }
 }
-
