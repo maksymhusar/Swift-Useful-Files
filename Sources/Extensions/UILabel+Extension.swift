@@ -25,13 +25,13 @@ extension UILabel {
         if let attributedString = self.attributedText {
             let newAttributedString = NSMutableAttributedString(attributedString: attributedString)
             
-            newAttributedString.addAttribute(NSKernAttributeName, value: letterSpacing, range: NSRange(location: 0, length: attributedString.string.characters.count))
+            newAttributedString.addAttribute(NSAttributedStringKey.kern, value: letterSpacing, range: NSRange(location: 0, length: attributedString.string.count))
             self.attributedText = newAttributedString
             
         } else if let text = self.text {
             let attributedString = NSMutableAttributedString(string: text)
 
-            attributedString.addAttribute(NSKernAttributeName, value: letterSpacing, range: NSRange(location: 0, length: text.characters.count))
+            attributedString.addAttribute(NSAttributedStringKey.kern, value: letterSpacing, range: NSRange(location: 0, length: text.count))
             self.attributedText = attributedString
         }
     }
@@ -45,17 +45,17 @@ extension UILabel {
         
         if let attributedString = self.attributedText {
             let newAttributedString = NSMutableAttributedString(attributedString: attributedString)
-            newAttributedString.addAttribute(NSParagraphStyleAttributeName,
+            newAttributedString.addAttribute(NSAttributedStringKey.paragraphStyle,
                                              value: style,
-                                             range: NSRange(location: 0, length: attributedString.string.characters.count))
+                                             range: NSRange(location: 0, length: attributedString.string.count))
             
             self.attributedText = newAttributedString
             
         } else if let text = self.text {
             let attributeString = NSMutableAttributedString(string: text)
-            attributeString.addAttribute(NSParagraphStyleAttributeName,
+            attributeString.addAttribute(NSAttributedStringKey.paragraphStyle,
                                          value: style,
-                                         range: NSRange(location: 0, length: text.characters.count))
+                                         range: NSRange(location: 0, length: text.count))
             
             self.attributedText = attributeString
         }
