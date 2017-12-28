@@ -14,11 +14,11 @@ class ConnectionStatusHandler {
     private init() { }
     
     // MARK: - Public methods
-    func startHandling() {
+    func start() {
         addNotifications()
     }
     
-    func stopHandling() {
+    func stop() {
         removeNotifications()
     }
     
