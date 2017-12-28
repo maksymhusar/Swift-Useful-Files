@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import PKHUD // just delete if not use
+import PKHUD // just delete if not using
 
 class ConnectionStatusHandler {
     static let instance = ConnectionStatusHandler()
@@ -33,7 +33,7 @@ class ConnectionStatusHandler {
     
     @objc private func internetNotAvailable(_ notification: Notification) {
         if let currentVC = UIApplication.topViewController(), currentVC is UIAlertController == false {
-            HUD.hide() // just delete if not use
+            HUD.hide() // just delete if not using
             let title = "No Internet Connection"
             let message = "Make sure your device is connected to the Internet"
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
