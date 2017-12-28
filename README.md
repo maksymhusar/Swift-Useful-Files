@@ -29,6 +29,7 @@ Requirements:
   - GlobalAppearance (configure appearance for the App)
   - Reachability (checking isInternetAvailable)
   - Utils (getting deviceScaleMultiplier for text size)
+  - ConnectionStatusHandler (processing internet connection and display error message)
 
 ### Scripts
   - Command line script for showing number of lines in project:
