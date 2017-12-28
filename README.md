@@ -17,6 +17,7 @@ Requirements:
   - UIView+Extension (easy loading from Nib)
   - UIImage+Extension (cropping image)
   - UIFont+Extension (easy to add and use custom fonts)
+  - UIImageView+Extension (easy loading and caching images with spinner and placeholder)
   
 ### Protocols
   - NibLoadableView
