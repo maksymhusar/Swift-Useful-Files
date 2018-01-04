@@ -29,8 +29,13 @@ extension UnwrappableNetworkResponse {
     }
     
     func postMainQueueNotification(name: Notification.Name, userInfo: [AnyHashable: Any]? = nil) {
-        DispatchQueue.main.async {
+        let postNotificationBlock = {
             NotificationCenter.default.post(name: name, object: nil, userInfo: userInfo)
+        }
+        if Thread.isMainThread {
+            postNotificationBlock()
+        } else {
+            DispatchQueue.main.async { postNotificationBlock() }
         }
     }
 }
