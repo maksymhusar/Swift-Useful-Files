@@ -39,7 +39,7 @@ extension UILabel {
     private func setLineHeight(_ lineHeight: CGFloat) {
         let style = NSMutableParagraphStyle()
         
-        style.lineHeightMultiple = lineHeight / self.font.pointSize
+        style.lineHeightMultiple = lineHeight / self.font.lineHeight
         style.lineBreakMode = .byTruncatingTail
         style.alignment = self.textAlignment
         
