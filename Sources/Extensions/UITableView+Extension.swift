@@ -43,8 +43,10 @@ extension UITableView {
         }
         
         if isHidden {
-            (self.backgroundView as? UIActivityIndicatorView)?.stopAnimating()
-            self.backgroundView = nil
+             if let activityIndicator = self.backgroundView as? UIActivityIndicatorView {
+                activityIndicator.stopAnimating()
+                self.backgroundView = nil
+            }
         } else {
             let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
             indicator.startAnimating()
