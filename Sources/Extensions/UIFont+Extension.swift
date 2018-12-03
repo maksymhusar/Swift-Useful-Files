@@ -11,18 +11,33 @@ import UIKit
 extension UIFont {
     
     enum FontFamily: String {
-        case standard = “APP_FONT”
+        case sanFrancisco = ".SFUIText"
+        //case someOther = "OTHER"
     }
     
-    enum FontWeight: String {
-        case light = "Light"
-        case regular = "Regular"
-        case medium = "Medium"
-        case bold = "Bold"
+    enum FontWeight {
+        case light
+        case regular
+        case medium
+        case bold
+        case semibold
+        
+        func string(for family: FontFamily) -> String? {
+            switch self {
+            case .light: return "Light"
+            case .regular: return nil
+            case .medium: return "Medium"
+            case .bold: return "Bold"
+            case .semibold: return "Semibold"
+            }
+        }
     }
     
-    class func font(ofSize size: CGFloat, weight: FontWeight = .regular, family: FontFamily = .standard) -> UIFont {        
-        let fontName = "\(family.rawValue)-\(weight.rawValue)"
+    class func font(ofSize size: CGFloat, weight: FontWeight = .regular, family: FontFamily = .sanFrancisco) -> UIFont {
+        var fontName = family.rawValue
+        if let weightString = weight.string(for: family) {
+            fontName += "-\(weightString)"
+        }
         guard let selectedFont = UIFont(name: fontName, size: size) else {
             preconditionFailure("Error! Custom font doesn't found")
         }
