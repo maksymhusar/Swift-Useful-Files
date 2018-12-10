@@ -26,7 +26,7 @@ extension UITableView {
         return cell
     }
     
-    func setCenteredActivityIndicatorHidden(_ isHidden: Bool) {
+    func setCenteredActivityIndicatorHidden(_ isHidden: Bool, delay: TimeInterval = 30) {
         
         struct DelayedCenteredContent {
             static var tasks: [(tableView: UITableView?, item: DispatchWorkItem?)] = []
@@ -56,7 +56,7 @@ extension UITableView {
                 self?.setCenteredActivityIndicatorHidden(true)
             }
             DelayedCenteredContent.tasks.append((tableView: self, item: task))
-            DispatchQueue.main.asyncAfter(deadline: .now() + 30, execute: task)
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: task)
         }
     }
 }
