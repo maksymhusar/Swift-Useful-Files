@@ -1,4 +1,4 @@
-// UITableView+Extension.swift, ReusableView.swift, NibLoadableView.swift used
+// Needed files: UITableView+Extension.swift, ReusableView.swift, NibLoadableView.swift
 
 class TestTableCell: UITableViewCell, ReusableView, NibLoadableView { }
 	
