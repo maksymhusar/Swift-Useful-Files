@@ -1,8 +1,9 @@
 // Needed files: 
-1) [UITableView+Extension.swift link](https://github.com/maksymhusar/Swift-Useful-Files/blob/master/Sources/Extensions/UITableView%2BExtension.swift)
-2) [ReusableView.swift link](https://github.com/maksymhusar/Swift-Useful-Files/blob/master/Sources/Protocols/ReusableView.swift)
-3) [NibLoadableView.swift link](https://github.com/maksymhusar/Swift-Useful-Files/blob/master/Sources/Protocols/NibLoadableView.swift)
+1) [UITableView+Extension.swift](https://github.com/maksymhusar/Swift-Useful-Files/blob/master/Sources/Extensions/UITableView%2BExtension.swift)
+2) [ReusableView.swift](https://github.com/maksymhusar/Swift-Useful-Files/blob/master/Sources/Protocols/ReusableView.swift)
+3) [NibLoadableView.swift](https://github.com/maksymhusar/Swift-Useful-Files/blob/master/Sources/Protocols/NibLoadableView.swift)
 
+```
 class TestTableCell: UITableViewCell, ReusableView, NibLoadableView { }
 	
 class TestViewController: UIViewController, UITableViewDataSource {
@@ -17,3 +18,4 @@ class TestViewController: UIViewController, UITableViewDataSource {
 	    return testCell
 	}
 }
+```
