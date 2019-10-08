@@ -35,7 +35,7 @@ Requirements:
 ### Scripts
   - Command line script for showing number of lines in project:
 ```
-find . "(" -name "*.swift" ")" -type f -exec wc -l {} + | sort -n
+find . -name "*.swift" -type f -exec wc -l {} + | sort -n
 ```
   - swiftTODOScript (show "TODO:|FIXME:" as warnings) 
 
